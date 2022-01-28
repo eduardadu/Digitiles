@@ -1367,7 +1367,7 @@ class View extends Observer{
     document.querySelector("#maxSize").value= 100;
 
     document.querySelector("#valueInput").value= 1;
-    document.querySelector("#valueSize").value= 100;
+    document.querySelector("#maxValue").value= 100;
   }
   tileListReset(){
     var groupsel = document.getElementById('tileListContainer').getElementsByTagName("div");
