@@ -1,0 +1,344 @@
+#mainContent{
+  overflow-y: auto;
+  width:100%;
+  height:100%;
+}
+
+/*---------------------------------------------------------------------- ABOUT PAGE  */
+/*---------------------------------------------------------------------- ABOUT PAGE  */
+/*---------------------------------------------------------------------- ABOUT PAGE  */
+
+.title1{
+  font-family: "Raleway";
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 3rem;
+  margin-top:2rem;
+  margin-bottom:1.2rem;
+  line-height: 1.2;
+
+}
+.title2{
+  font-family: "Raleway";
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom:0.3rem;
+}
+
+.title3{
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.aboutContainer{
+    position:relative;
+    background-color: white;
+    width:100%;
+    min-height:calc(100% - 6rem);
+    padding-top: 6rem;
+    margin-bottom:0px;
+}
+
+.textContainer{
+  position: relative;
+
+  max-width: 90%;
+  flex-direction: column;
+}
+
+.textBlock{
+  margin-bottom:3rem;
+  position:relative;
+
+  display:flex;
+
+}
+
+.textDiv{
+  font-size:0.85rem;
+  line-height: 1.25rem;
+  max-width: 460px;
+}
+.imageDiv{
+  max-width: 500px;
+}
+
+.linksaabout{
+  color: black;
+}
+.linksaabout:hover{
+  color: var(--focus-color);
+}
+
+.aboutSlide{
+  position:relative;
+  bottom:0px;
+  left:0px;
+  animation: waitFor 1s 0s, faceUpDown 2s 1s;
+
+}
+.abouttitle{
+  margin-bottom: 0.6rem;
+  min-width:350px;
+  font-size:1.3rem;
+}
+
+.aboutBlock{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:3rem;
+  z-index:5;
+}
+
+.imgAbout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutBut{
+  margin-right:1rem;
+  margin-top:1rem;
+}
+/* -----------------------------------------------------------------------HOME*/
+/* -----------------------------------------------------------------------HOME*/
+/* -----------------------------------------------------------------------HOME*/
+/* -----------------------------------------------------------------------HOME*/
+/* -----------------------------------------------------------------------HOME*/
+
+.aTop{
+  text-decoration: none;
+  position:relative; height:100%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerHome{
+  width:1000px;
+  position:relative;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.homeContainer{
+  position:absolute;
+  background-color: white;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+  top:80px;
+}
+
+.hPBut{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#goTry{
+  max-width: 20rem;
+  margin-right:4rem;
+  margin-top:0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  height:1.6rem;
+  cursor: pointer;
+}
+#goTry span{
+  height:1.6rem;
+}
+#knowMore{
+  margin-left:0.4rem;
+  display: inline-block;
+  position:relative;
+  margin-top:0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  height:1.6rem;
+
+}
+
+
+.arrowA{
+  margin-left:1.4rem;
+  margin-right:0.4rem;
+  transition: margin-right 0.5s, margin-left 0.5s;
+  width:4rem;
+}
+#goTry:hover .arrowA{
+  opacity:0.7;
+  cursor: pointer;
+  transition: right 2s;
+  margin-right:-1.6rem;
+  margin-left: calc( 1.4rem + 2rem);
+  transition: margin-right 0.5s, margin-left 0.5s;
+}
+
+#knowMore:hover, #goTry:hover span{
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  height:1.6rem;
+}
+
+.homeFooter{
+  position:absolute;
+  background-color: transparent;
+  width: calc(100% - 4rem);
+  bottom:1.4rem;
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-right:2rem;
+  margin-left:2rem;
+}
+.footerDiv{
+  font-weight: 600;
+
+}
+
+#centerHome{
+  width:500px;
+  height:auto;
+  font-weight: var(--main-font-bold);
+}
+
+.gifs{
+  position:relative;
+  width:50%;
+  border: 1px solid black;
+}
+
+.homeh1{
+  max-width:620px;
+  min-width:620px;
+  position: relative;
+  animation: waitFor 1.5s 0s, faceUpDown 2.4s 1.5s ;
+  animation-timing-function: ease-out;
+  margin-left:2rem;
+}
+
+.homeh2{
+  min-width:350px;
+  max-width:350px;
+  animation: waitFor 3s 0s, faceAppear 2s 3s;
+}
+#homebuttons{
+  margin-top:2.5rem;
+  animation: waitFor 3s 0s, faceAppear 2s 3s;
+}
+#homebuttons .smallB{
+  max-width:125px;
+}
+
+
+/*--------------------------------*/
+.col6{
+  flex: 6;
+}
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
+}
+.col2 {
+  flex: 2;
+}
+.col3 {
+  flex: 3;
+}
+.col4 {
+  flex: 4;
+}
+.col8 {
+  flex: 8;
+}
+
+/*--------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .homeh1, .title1 {
+      font-size: 1.8rem;
+      max-width:320px;
+      min-width:320px;
+      animation: waitFor 0.4s 0s, faceUpDown 2s 0.4s ;
+    }
+    .homeh2, .title3{
+      font-size:0.8rem;
+      min-width:300px;
+      max-width:300px;
+      animation: faceAppear 2s 0.4s;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1399px) {
+    .grid-item, .grid-sizer {
+       width:  calc(50% - var(--item-margin));
+       height:200px;
+     }
+}
+@media screen and (min-width: 1400px) and (max-width: 1899px) {
+    .grid-item, .grid-sizer {
+      width:  calc((100% / 3) - var(--item-margin));
+      height:200px;
+    }
+}
+#imgAbout{
+  position: absolute; top:5%; height:90%; right:-10vw; opacity:0.5;
+}
+@media screen and (orientation:portrait) {
+  #imgAbout {
+    position: absolute; top:5%; height:90%;
+    opacity:0.1;
+    right: -60vw;
+  }
+}
+
+
+/* -----------------------------------------------------------------ANIMATIONS*/
+/* -----------------------------------------------------------------ANIMATIONS*/
+/* -----------------------------------------------------------------ANIMATIONS*/
+/* -----------------------------------------------------------------ANIMATIONS*/
+/* -----------------------------------------------------------------ANIMATIONS*/
+@keyframes waitFor {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+
+@keyframes faceUpDown {
+  0%{
+    opacity:0;
+    bottom:3rem;
+  }
+  80%{
+    bottom:0px;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+
+@keyframes faceAppear {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
