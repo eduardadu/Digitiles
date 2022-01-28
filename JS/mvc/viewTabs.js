@@ -251,8 +251,8 @@ class ViewTabs{
             t.triggerSeparator();
 
             var s= setTimeout(function(){
-               window.history.pushState('page' + pageNumber, pageName, "../digitiles/" +pageURL);
-              localStorage.setItem("response", "../digitiles/" + pageURL);
+              window.history.pushState('page' + pageNumber, pageName, "../digitiles" +pageURL);
+              localStorage.setItem("response", "../digitiles" + pageURL);
 
               setTimeout(function(){
                 $("#mainContent").load(contentURL, function(){
