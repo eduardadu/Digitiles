@@ -1,0 +1,59 @@
+#modalBoxUpload{
+  position:fixed;
+  background-color: rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  z-index:32;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer{
+  position:relative;
+  width:22rem;
+  height:10rem;
+  z-index:33;
+  color: var(--text-color-semi);
+  background-color: var(--highlight-color);
+  padding:3rem;
+  opacity:1;
+
+}
+
+.modalTitle{
+  font-size:1rem;
+  font-weight: 500;
+  position:relative;
+  width:100%;
+  margin-bottom: 1rem;
+  margin-top:1rem;
+}
+.modalDescription{
+  font-size:0.80rem;
+  position:relative;
+  width:100%;
+  color: var(--text-color-faded);
+  line-height: 150%;
+}
+.buttonModal{
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  margin-top:3.6rem;
+  bottom:1rem;
+}
+.closemodal{
+  position:absolute;
+  width:1.2rem;
+  cursor:pointer;
+    top:2rem;
+    right:2rem;
+}
+
+.modalTop{
+  display:flex;
+  justify-content: space-between;
+  flex-direction:row;
+
+}

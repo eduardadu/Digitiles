@@ -1,0 +1,142 @@
+:root {
+  --main-color: #F8F8F8;
+  --highlight-color: #FFFFFF;
+  --focus-color:  #52BEEC; /*#52ECC7; */
+
+  --text-color: #000000;
+  --text-color-dark: #303030;
+
+  --text-color-semi: #535353 ;
+  --text-color-faded: #8E8E8E ;
+  --text-color-faded2: #B5B5B5 ;
+  --text-color-light: #CFCFCF;
+  --text-color-light2: #EFEFEF;
+  --text-color-light3: #f7f7f7;
+  --bg-color: #D7D7D7;
+
+  --tooltip-color: #353535 ;
+
+  --error-color: #d63e3c ;
+
+  --main-font: 'Raleway' ;
+  --main-font-bold: 700;
+  --main-font-size-h1: 1.6rem;
+  --main-font-size-h2: 0.85rem;
+  --main-font-size-h3: 0.85rem;
+  --main-font-size-h4: 0.85rem;
+  --main-font-size-small: 0.76rem;
+
+  --top-height: 48px;
+  --sidebar-width: 288px;
+  /*--transition-speed: 0.5s; */
+  --space-4: 4rem;
+  --space-3: 3rem;
+  --space-2: 2rem;
+
+  --space-1-6: 1.6rem;
+  --space-1-5: 1.5rem;
+  --space-1-4: 1.4rem;
+  --space-1-2: 1.2rem;
+  --space-1: 1rem;
+  --space-0-8: 0.8rem;
+  --space-0-75: 0.75rem;
+  --space-0-6: 0.6rem;
+  --space-0-5: 0.5rem;
+
+  --anim-canvas: 5s;
+  --anim-sidebar: 5.5s;
+  --anim-topbar: 5.5s;
+  --anim-delay: 5.5s;
+  --anim-botbar: 5.5s;
+}
+
+
+
+@media screen and (max-height: 800px) {
+  :root {
+    --top-height: 40px;
+    --sidebar-width: 264px;
+    /*--transition-speed: 0.5s; */
+
+    --main-font-size-h1: 1.6rem;
+    --main-font-size-h2: 0.75rem;
+    --main-font-size-h3: 0.75rem;
+    --main-font-size-h4: 0.75rem;
+    --main-font-size-small: 0.66rem;
+
+    --space-4: 3rem;
+    --space-3: 2rem;
+    --space-2: 1.2rem;
+
+    --space-1-6: 1.2rem;
+    --space-1-5: 0.6rem;
+    --space-1-2: 0.8rem;
+    --space-1: 0.8rem;
+    --space-0-8: 0.6rem;
+    --space-0-75: 0.65rem;
+    --space-0-6: 0.2rem;
+    --space-0-5: 0.5rem;
+  }
+}
+
+
+
+@keyframes goDown {
+  0%{
+    top:-4rem;
+  }
+  60%{
+    top:-4rem;
+  }
+  100% {
+    top:0px;
+  }
+}
+@keyframes goRight {
+  0%{
+    left: calc(-1 * var(--sidebar-width));
+  }
+  60%{
+    left: calc(-1 * var(--sidebar-width));
+  }
+  100% {
+    left:0px;
+  }
+}
+@keyframes goUp {
+  0%{
+    bottom:-5rem;
+  }
+  60%{
+    bottom:-5rem;
+  }
+  100% {
+    bottom:1.4rem;
+  }
+}
+@keyframes goUpLong {
+  0%{
+    top:100%;
+  }
+  60%{
+    top:100%;
+  }
+  100% {
+    top: var(--top-height);
+  }
+}
+
+@keyframes growPixel {
+  0%{
+    max-width:0px;
+    max-height:0px;
+  }
+  33%{
+    max-width:0px;
+    max-height:0px;
+  }
+  100% {
+    max-width:100%;
+    max-height:100%;
+  }
+}

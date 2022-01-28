@@ -1,0 +1,470 @@
+
+/*-------------------------------------------------------------------- SLIDER */
+/*-------------------------------------------------------------------- SLIDER */
+/*-------------------------------------------------------------------- SLIDER */
+.slider {
+  position:relative;
+  -webkit-appearance: none;
+  width:80%;
+  height: 1px;
+  background: var(--text-color);
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  display: inline-block;
+  cursor:pointer;
+}
+.slider:hover{
+  background: var(--text-color);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius:10px;
+  background: var(--highlight-color);
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+}.slider::-webkit-slider-thumb:hover{
+  }
+  .slider::-webkit-slider-thumb:active{
+    background: var(--focus-color);
+    border:none;}
+
+.slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius:10px;
+  background: var(--text-color);
+  cursor: pointer;
+}.slider::-moz-range-thumb:hover{
+  }
+  .slider::-moz-range-thumb:active{
+    background: var(--focus-color);
+    border:none;}
+
+.sideLabels{
+  display:block;
+}
+.sliderContainer{
+  position:relative;
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+
+.sliderNumber{
+  width:1rem;
+}
+
+/* ---------------------------------------------------------------------------*/
+section.range-slider {
+  position: relative;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+}
+section.range-slider input {
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 15px;
+  width: 200px;
+  outline: none;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+}
+section.range-slider input::-webkit-slider-thumb {
+  pointer-events: all;
+  position: relative;
+  z-index: 1;
+  outline: 0;
+}
+section.range-slider input::-moz-range-thumb {
+  pointer-events: all;
+  position: relative;
+  z-index: 10;
+  -moz-appearance: none;
+  width: 9px;
+}
+section.range-slider input::-moz-range-track {
+  position: relative;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 1);
+  border: 0;
+}
+section.range-slider input:last-of-type::-moz-range-track {
+  -moz-appearance: none;
+  background: none transparent;
+  border: 0;
+}
+section.range-slider input[type=range]::-moz-focus-outer {
+border: 0;
+}
+
+/*-------------------------------------------------------------------- SMALL RADIO  */
+/*-------------------------------------------------------------------- SMALL RADIO  */
+/*-------------------------------------------------------------------- SMALL RADIO  */
+
+.rotatecontainer{
+  display:flex;
+  flex-direction: column;
+  margin-bottom:0.4rem;
+}
+.containerblock{
+
+}
+.smallradio{
+  display:flex;
+  flex-direction: column;
+  margin-left:1.4rem;
+  opacity:0.3;
+}
+.smallradio div label{
+  font-size:0.78rem;
+  cursor:pointer;
+  color: var(--text-color-faded);
+}
+.smallradio div input[type=radio]{
+  width:12px;
+  cursor:pointer;
+}
+.smallradio{
+  display:flex;
+  justify-content: center;
+}
+/*-------------------------------------------------------------------- COLOR  */
+/*-------------------------------------------------------------------- COLOR  */
+/*-------------------------------------------------------------------- COLOR  */
+.colorContainer{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  width:100%;
+  margin-bottom:1rem;
+}
+.colorBox{
+  cursor:pointer;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  max-width:125;
+  margin-bottom:0.6rem;
+
+}
+input[type="color"]{
+  padding:0px;
+  border-radius: 10%;
+    height: var(--space-0-8);
+    width: 1.4rem;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    left:-1px;
+    position:relative;
+    cursor:pointer;
+}
+
+.colorLabel{
+  position:absolute;
+  padding-left:28px;
+  cursor:pointer;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    background: rgba(0,0,0,0.0);
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 10%;
+    border: 0.5px solid var(--text-color);
+}
+
+input[type="color"]::-moz-color-swatch-wrapper {
+    padding: 0;
+    background: rgba(0,0,0,0.0);
+}
+input[type="color"]::-moz-color-swatch {
+  height: var(--space-0-8);
+  width: 1.4rem;
+    position:relative;
+
+    border: none;
+    border-radius: 20%;
+    border: 0.5px solid var(--text-color);
+}
+
+
+/*---------------------------------------------------------------- NUMBER */
+/*---------------------------------------------------------------- NUMBER */
+/*---------------------------------------------------------------- NUMBER */
+
+
+.inputDefault {
+  box-sizing: border-box;
+  outline: none;
+  cursor:n-resize;
+  font-size: var(--main-font-size-h2);
+  text-align: right;
+  border:none;
+}
+.inputDefault:focus{
+  box-sizing: border-box;
+  border:none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.inpNumError{
+  border-bottom: 1px solid var(--text-color);
+}
+
+
+.sliderNumber, #sizeInput{
+  display:flex;
+  width:1.6rem;
+  height:1rem;
+  font-size:0.60rem;
+  border:  1px solid var(--text-color-light);
+  border-radius: 2px;
+  text-align: center;
+  justify-content: centeR;
+  color: var(--text-color-faded);
+  cursor:text;
+  box-sizing: border-box;
+  outline: none;
+  margin-left:0.4rem;
+}
+.sliderNumber:focus, #sizeInput:focus{
+  border:  1.5px solid var(--focus-color);
+}
+
+.sliderInputCont{
+  position:relative;
+  width:60%;
+  height:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*---------------------------------------------------------------------- TEXT */
+/*---------------------------------------------------------------------- TEXT */
+/*---------------------------------------------------------------------- TEXT */
+input[type=text] {
+  width: 4rem;
+  box-sizing: border-box;
+  border: 1px solid var(--text-color);
+  outline: none;
+    text-align: center;
+    padding-left:6px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--text-color-faded);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--text-color-faded);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--text-color-faded);
+}
+
+.positionText{
+  margin-top:var(--space-0-5);
+  margin-bottom:var(--space-0-5);
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.settingsText{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.settingsText .inputDefault {
+  font-size:var(--main-font-size-h3);
+  width:2.5rem;
+  text-align: center;
+  border:none;
+  position:absolute;
+  left:1.5rem;
+  background-color:transparent;
+  overflow:hidden;
+  font: var(--main-font);
+  font-size: var(--main-font-size-h3);
+  height:100%;
+}
+.labelSmall{
+  font-size:var(--main-font-size-h2); /* 0.8*/
+  text-align: center;
+  font-weight: 500;
+}
+
+.labelBig{
+  font-size:var(--main-font-size-h2); /* 0.8*/
+}
+
+.settingsItem{
+  position:relative;
+  margin-bottom:0.6rem;
+  width:45%;
+  height:1.6rem;
+  padding:1px;
+  padding-left:4px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.settingsItem:hover{
+  border: 1px solid var(--text-color-faded2);
+}
+.settingsItem:focus-within{
+    border: 2px solid var(--focus-color);
+}
+.SILong{
+  width:auto;
+  max-width:100px;
+  width:65%;
+}
+/*---------------------------------------------------------------- CHECKBOX */
+/*---------------------------------------------------------------- CHECKBOX */
+/*---------------------------------------------------------------- CHECKBOX */
+.checkboxSmall {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+  float: left;
+    clear: left;
+  -webkit-user-select: none;
+  -moz-user-{select}: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+/* Hide the browser's default checkbox */
+.checkboxSmall input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--space-0-8);
+  width: var(--space-0-8);
+  background-color: var(--main-color);
+  border: 1px solid var(--text-color);
+  margin-right:4px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxSmall:hover input ~ .checkmark {
+  background-color: var(--main-color);
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxSmall input:checked ~ .checkmark {
+  /*background-color: var(--text-color); */
+  /*box-shadow:  0 0 0 2px #000000; */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  cursor:pointer;
+}
+
+/* Show the checkmark when checked */
+.checkboxSmall input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxSmall .checkmark:after {
+  left: 4px;
+  top: 0px;
+  width: 3px;
+  height: 8px;
+  border: solid var(--text-color);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*-----------------------------------------------------------------------------*/
+#sizeMargin{
+  margin-bottom:0.4rem;
+}
+
+#smallCheckbox{
+  height:1rem;
+  font-size:var(--main-font-size-small);
+  padding-left:2px;
+  color: var(--text-color-faded);
+  margin-bottom:1.4rem;
+}
+
+#smallCheckbox .checkmark{
+  color: var(--text-color-faded);
+  height:0.56rem;
+  width:0.56rem;
+  padding-left:0px;
+  left: auto;
+  margin-left:var(--space-1);
+  top:1px;
+}
+#smallCheckbox2{
+  color: var(--text-color-faded);
+  margin-bottom:var(--space-1-2);
+  font-size:var(--main-font-size-small);
+  padding-left:var(--space-1-2);
+  left:4px;
+}
+
+#smallCheckbox2 .checkmark{
+  color: var(--text-color-faded);
+  height:0.56rem;
+  width:0.56rem;
+  padding-left:0px;
+}
