@@ -176,7 +176,7 @@ class ViewTabs{
     var t= this;
 
     let vid = document.getElementById("VideoLoads");
-        vid.src= "../assets/placeholders/wings.mp4";
+        vid.src= "assets/placeholders/wings.mp4";
         vid.onloadstart = function() {
 
           async function runInOrder(vid){
@@ -221,7 +221,7 @@ class ViewTabs{
     async function runInOrder(){
       await gen();
       await vie();
-      await view.controller.handleInput("Input+LocalImage", "../assets/placeholders/place3.jpg");
+      await view.controller.handleInput("Input+LocalImage", "assets/placeholders/place3.jpg");
       await view.display();
       await view.startApp();
     }
