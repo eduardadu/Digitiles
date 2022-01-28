@@ -318,8 +318,8 @@ class ViewTabs{
     var homeHyp= document.querySelectorAll(".homeHyp");
     var worksHyp= document.querySelectorAll(".createHyp");
     t.addHyper(homeHyp, 3, 'Welcome to Digitiles', '/Digitiles/home.html', 'content/home.html');
-    t.addHyper(aboutHyp, 4, 'About', '/about.html', '/Digitiles/content/about.html');
-    t.addHyper(worksHyp, 2, 'Digitiles', '/create.html', '/Digitiles/content/create.html');
+    t.addHyper(aboutHyp, 4, 'About', '/Digitiles/about.html', 'content/about.html');
+    t.addHyper(worksHyp, 2, 'Digitiles', '/Digitiles/create.html', 'content/create.html');
 
     t.create = document.querySelector("#create");
     t.about = document.querySelector("#about");
