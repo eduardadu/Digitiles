@@ -280,6 +280,7 @@ class ViewTabs{
               t.triggerSeparator();
               var s= setTimeout(function(){
                 var pageName= "";
+
                 var contentURL= document.location.pathname.split("/").pop();
 
                 if(contentURL.length==0){contentURL= "create.html"}
@@ -317,9 +318,9 @@ class ViewTabs{
     var aboutHyp= document.querySelectorAll(".aboutHyp");
     var homeHyp= document.querySelectorAll(".homeHyp");
     var worksHyp= document.querySelectorAll(".createHyp");
-    t.addHyper(homeHyp, 3, 'Welcome to Digitiles', '/Digitiles/home.html', 'content/home.html');
-    t.addHyper(aboutHyp, 4, 'About', '/Digitiles/about.html', 'content/about.html');
-    t.addHyper(worksHyp, 2, 'Digitiles', '/Digitiles/create.html', 'content/create.html');
+    t.addHyper(homeHyp, 3, 'Welcome to Digitiles', '/home.html', 'content/home.html');
+    t.addHyper(aboutHyp, 4, 'About', '/about.html', 'content/about.html');
+    t.addHyper(worksHyp, 2, 'Digitiles', '/create.html', 'content/create.html');
 
     t.create = document.querySelector("#create");
     t.about = document.querySelector("#about");
