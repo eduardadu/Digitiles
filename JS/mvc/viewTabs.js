@@ -140,7 +140,7 @@ class ViewTabs{
       t.about.classList.add("tbSelected2");
     });
 
-    $("aTop").click(
+    $(".aTop").click(
       function (evt){
          event.preventDefault();
         return false;
@@ -242,6 +242,11 @@ class ViewTabs{
 
 
   addHyper(clickables, pageNumber, pageName, pageURL, contentURL){
+
+      function getBaseUrl() {
+          var re = new RegExp(/^.*\//);
+          return re.exec(window.location.href);
+      }
       var t=this;
 
       clickables.forEach(function(element){
@@ -251,8 +256,10 @@ class ViewTabs{
             t.triggerSeparator();
 
             var s= setTimeout(function(){
-              window.history.pushState('page' + pageNumber, pageName, "../digitiles" +pageURL);
-              localStorage.setItem("response", "../digitiles" + pageURL);
+              var vala= getBaseUrl();
+
+              window.history.pushState('page' + pageNumber, pageName,  vala + pageURL);
+              localStorage.setItem("response",  vala + pageURL);
 
               setTimeout(function(){
                 $("#mainContent").load(contentURL, function(){
@@ -282,7 +289,7 @@ class ViewTabs{
                 var pageName= "";
 
                 var contentURL= document.location.pathname.split("/").pop();
-
+                
                 if(contentURL.length==0){contentURL= "create.html"}
                 contentURL = "content/" + contentURL;
 
@@ -318,9 +325,9 @@ class ViewTabs{
     var aboutHyp= document.querySelectorAll(".aboutHyp");
     var homeHyp= document.querySelectorAll(".homeHyp");
     var worksHyp= document.querySelectorAll(".createHyp");
-    t.addHyper(homeHyp, 3, 'Welcome to Digitiles', '/home.html', 'content/home.html');
-    t.addHyper(aboutHyp, 4, 'About', '/about.html', 'content/about.html');
-    t.addHyper(worksHyp, 2, 'Digitiles', '/create.html', 'content/create.html');
+    t.addHyper(homeHyp, 3, 'Welcome to Digitiles', 'home.html', 'content/home.html');
+    t.addHyper(aboutHyp, 4, 'About', 'about.html', 'content/about.html');
+    t.addHyper(worksHyp, 2, 'Digitiles', 'create.html', 'content/create.html');
 
     t.create = document.querySelector("#create");
     t.about = document.querySelector("#about");
