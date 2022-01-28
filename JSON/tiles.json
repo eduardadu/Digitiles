@@ -1,0 +1,26 @@
+const tiles = {
+  "Rec1LSSM": 1,
+  "Cir1LSSM" : 1,
+  "Tri1LSSM": 1,
+  "Losang1LMSM": 1,
+  "Star1LSSM": 1,
+  "Arrow1LMSM": 1,
+
+  "Bar1LMSM" : 1,
+
+  "Pupil2LSSM" : 1,
+  "RecPupil2LSSM" : 1,
+
+  "Octogon1LMSM":1,
+  "BreathingRectTile":1,
+  "Shuriken1LMRM":1,
+
+  "Tri2LSSM":1,
+  "Tri4LSSA":1,
+  "Tri4LSSC":1,
+  "TriRec5LSSC":1,
+
+  "VertLinesTile" :1,
+  "ChessLinesTile":1,
+  "WeirdChessLinesTile":1
+}

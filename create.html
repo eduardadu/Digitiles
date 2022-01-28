@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+
+  <title>Digitiles</title>
+
+  <link rel="icon"
+      type="image/png"
+      href="assets/placeholders/favicon.png">
+
+  <link rel="stylesheet" href="CSS/styleQueries.css">
+  <link rel="stylesheet" href="CSS/loading.css">
+  <link rel="stylesheet" href="CSS/styleSeparator.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/styleInput.css">
+  <link rel="stylesheet" href="CSS/styleButton.css">
+  <link rel="stylesheet" href="CSS/canvasInteractions.css">
+
+  <link rel="stylesheet" href="CSS/styleModal.css">
+  <link rel="stylesheet" href="CSS/styleTooltip.css">
+  <link rel="stylesheet" href="CSS/styleText.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+
+
+  <script src="libraries/jquery-3.6.0.min.js"></script>
+  <script>
+
+  </script>
+
+
+    <script src="libraries/opencv.js" type="text/javascript"></script>
+    <!--  LIBRARIES -->
+    <script src="libraries/p5/p5.js"></script>
+    <script src="libraries/raphael/raphael.min.js"></script>
+    <script src="libraries/CCapture.all.min.js"></script>
+    <!--  PATTERNS -->
+    <script src="https://unpkg.com/p5.js-svg@1.1.1"></script>
+    <!-- <script src="https://unpkg.com/h264-mp4-encoder/embuild/dist/h264-mp4-encoder.web.js"></script> -->
+    <!--  PDF EXPORT...... -->
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="libraries/jspdf.plugin.svgToPdf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js"></script>
+    <script src="libraries/spectrum.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/spectrum.min.css">
+
+    <!--  PATTERNS -->
+    <script src="JS/patterns/obs.js"></script>
+    <script src="JS/patterns/command.js"></script>
+
+    <!--  MODS -->
+    <script src="JS/mods/text.js"></script>
+    <script src="JS/mods/font.js"></script>
+    <script src="JS/mods/draw.js"></script>
+    <script src="JS/mods/filter.js"></script>
+
+    <!--  SETTINGS -->
+    <script src="JS/input.js"></script>
+    <script src="JS/export.js"></script>
+    <script src="JS/grid.js"></script>
+    <script src="JS/cell.js"></script>
+
+    <!--  TILES -->
+    <script src="JS/tiles/tileManager.js"></script>
+    <script src="JS/tiles/tile.js"></script>
+    <script src="JS/tiles/tile2.js"></script>
+    <script src="JS/tiles/tile3.js"></script>
+    <script src="JS/tiles/tile3d.js"></script>
+    <script src="JS/tiles/tileLevels.js"></script>
+
+    <!--  MVC -->
+    <script src="JS/mvc/viewTabs.js"></script>
+    <script src="JS/mvc/generator.js"></script>
+    <script src="JS/generatorType.js"></script>
+    <script src="JS/matrixType.js"></script>
+    <script src="JS/mvc/view.js"></script>
+    <script src="JS/mvc/controller.js"></script>
+    <script src="JS/main.js"></script>
+</head>
+
+
+<body>
+
+  <div class="separator" >
+    <div class="sepBlack">
+      <div class="sepCenter">
+        <div class="sepTiles" id="sepTiles"></div>
+        Loading tiles...
+      </div>
+    </div>
+  </div>
+
+<div class="progressLoading" style="display:none">
+  <span class="labelLoading">Uploading</span>
+  <div class="loaderSmall">
+    <div class="loaderBarSmall"></div>
+  </div>
+</div>
+
+<div id="modalBoxUpload" style="display:none">
+  <div class="modalContainer">
+    <div id="closemodal">
+      <svg class="closemodal" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+    </div>
+    <div class="modalTop">
+      <div class="modalTitle">Would you like to keep your actual settings?</div>
+    </div>
+
+    <div class="modalDescription">By clicking "No" all your texts, drawings and tile settings will be reseted.</div>
+    <div class="buttonModal">
+      <div id="maintain" class="buttonSecondary smallB">Yes</div>
+      <div id="notmaintain" class="button smallB">No</div>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+
+
+<div id="topbar">
+</div>
+
+<!-- --------------------------------------------------------------------------->
+<!-- --------------------------------------------------------------------------->
+<!-- --------------------------------------------------------------------------->
+
+
+<div id="mainContent">
+
+
+
+</div>
+
+
+</body>
+</html>

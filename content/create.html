@@ -1,0 +1,1114 @@
+
+<div class="progressLoading" style="display:none">
+  <span class="labelLoading">Uploading</span>
+  <div class="loaderSmall">
+    <div class="loaderBarSmall"></div>
+  </div>
+</div>
+
+  <div id="sidebar">
+
+    <div class="sidebarArrow" id="hideMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/></svg>
+    </div>
+
+    <div class="sidebarContainer">
+
+
+      <!-- -------------------------------------------------------------------------- UPLOAD -->
+      <div id="Upload" class="section" style="max-height:100vh">
+
+        <div class="help" style="display:block;">
+          <div class="tooltipContCont">
+            <div class="tooltipCont">
+              <div class="tooltip tttside">Start by uploading an image or video, use your webcam or start with a blank canvas.
+              </div>
+            </div>
+          </div>
+          <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.23048 10.815C6.23048 10.4163 6.29114 10.0523 6.41248 9.723C6.54248 9.385 6.83281 9.09033 7.28348 8.839C7.39614 8.76967 7.54348 8.68733 7.72548 8.592C7.90748 8.49667 8.08948 8.384 8.27148 8.254C8.46214 8.124 8.61814 7.97667 8.73948 7.812C8.86948 7.63867 8.93448 7.448 8.93448 7.24C8.93448 6.954 8.83048 6.733 8.62248 6.577C8.41448 6.41233 8.17614 6.33 7.90748 6.33C7.67348 6.33 7.47414 6.382 7.30948 6.486C7.14481 6.59 7.00181 6.71567 6.88048 6.863C6.76781 7.01033 6.67248 7.14467 6.59448 7.266L5.25548 6.33C5.48081 5.80133 5.83614 5.38967 6.32148 5.095C6.81548 4.80033 7.37014 4.653 7.98548 4.653C8.41881 4.653 8.84781 4.73967 9.27248 4.913C9.69714 5.08633 10.0481 5.36367 10.3255 5.745C10.6028 6.12633 10.7415 6.629 10.7415 7.253C10.7415 7.747 10.6375 8.163 10.4295 8.501C10.2301 8.83033 9.93114 9.12067 9.53248 9.372C9.28981 9.528 9.04714 9.671 8.80448 9.801C8.56181 9.92233 8.35814 10.061 8.19348 10.217C8.02881 10.373 7.94648 10.5723 7.94648 10.815H6.23048ZM6.26948 14V12.05H7.97248V14H6.26948Z" fill="#B1A8A8"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H1V17H14V1ZM0 0V18H15V0H0Z" fill="#B1A8A8"/>
+          </svg>
+        </div>
+
+        <h2 class="sectiontitle" id="sectiontitleSelected">
+          <svg id="sectionSVGSelected" class="sectionSVG" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="2" width="2" height="2" transform="rotate(-90 4 2)" fill="#8E8E8E"/>
+            <rect x="6" y="2" width="2" height="2" transform="rotate(-90 6 2)" fill="#8E8E8E"/>
+            <rect x="10" y="2" width="2" height="2" transform="rotate(-90 10 2)" fill="#8E8E8E"/>
+            <rect x="12" y="2" width="2" height="2" transform="rotate(-90 12 2)" fill="#8E8E8E"/>
+            <rect x="14" y="2" width="2" height="2" transform="rotate(-90 14 2)" fill="#8E8E8E"/>
+            <rect x="2" y="2" width="2" height="2" transform="rotate(-90 2 2)" fill="#8E8E8E"/>
+            <rect y="2" width="2" height="2" transform="rotate(-90 0 2)" fill="#8E8E8E"/>
+            <rect y="4" width="2" height="2" transform="rotate(-90 0 4)" fill="#8E8E8E"/>
+            <rect x="4" y="18" width="2" height="2" transform="rotate(180 4 18)" fill="#8E8E8E"/>
+            <rect x="18" y="14" width="2" height="2" transform="rotate(90 18 14)" fill="#8E8E8E"/>
+            <rect y="12" width="2" height="2" transform="rotate(-90 0 12)" fill="#8E8E8E"/>
+            <rect x="12" y="6.2002" width="2" height="2" transform="rotate(-90 12 6.2002)" fill="#8E8E8E"/>
+            <rect x="4" y="10" width="2" height="2" transform="rotate(-90 4 10)" fill="#8E8E8E"/>
+            <rect x="4" y="12" width="2" height="2" transform="rotate(-90 4 12)" fill="#8E8E8E"/>
+            <rect x="4" y="14" width="2" height="2" transform="rotate(-90 4 14)" fill="#8E8E8E"/>
+            <rect x="6" y="14" width="2" height="2" transform="rotate(-90 6 14)" fill="#8E8E8E"/>
+            <rect x="8" y="14" width="2" height="2" transform="rotate(-90 8 14)" fill="#8E8E8E"/>
+            <rect x="8" y="12" width="2" height="2" transform="rotate(-90 8 12)" fill="#8E8E8E"/>
+            <rect x="6" y="10" width="2" height="2" transform="rotate(-90 6 10)" fill="#8E8E8E"/>
+            <rect x="4" y="8" width="2" height="2" transform="rotate(-90 4 8)" fill="#8E8E8E"/>
+            <rect x="10" y="14" width="2" height="2" transform="rotate(-90 10 14)" fill="#8E8E8E"/>
+            <rect x="12" y="14" width="2" height="2" transform="rotate(-90 12 14)" fill="#8E8E8E"/>
+            <rect x="12" y="12" width="2" height="2" transform="rotate(-90 12 12)" fill="#8E8E8E"/>
+            <rect x="6" y="12" width="2" height="2" transform="rotate(-90 6 12)" fill="#8E8E8E"/>
+            <rect x="12" y="18" width="2" height="2" transform="rotate(180 12 18)" fill="#8E8E8E"/>
+            <rect x="18" y="6" width="2" height="2" transform="rotate(90 18 6)" fill="#8E8E8E"/>
+            <rect y="6" width="2" height="2" transform="rotate(-90 0 6)" fill="#8E8E8E"/>
+            <rect x="6" y="18" width="2" height="2" transform="rotate(180 6 18)" fill="#8E8E8E"/>
+            <rect x="18" y="12" width="2" height="2" transform="rotate(90 18 12)" fill="#8E8E8E"/>
+            <rect y="14" width="2" height="2" transform="rotate(-90 0 14)" fill="#8E8E8E"/>
+            <rect x="14" y="18" width="2" height="2" transform="rotate(180 14 18)" fill="#8E8E8E"/>
+            <rect x="18" y="4" width="2" height="2" transform="rotate(90 18 4)" fill="#8E8E8E"/>
+            <rect y="8" width="2" height="2" transform="rotate(-90 0 8)" fill="#8E8E8E"/>
+            <rect x="8" y="18" width="2" height="2" transform="rotate(180 8 18)" fill="#8E8E8E"/>
+            <rect x="18" y="10" width="2" height="2" transform="rotate(90 18 10)" fill="#8E8E8E"/>
+            <rect y="16" width="2" height="2" transform="rotate(-90 0 16)" fill="#8E8E8E"/>
+            <rect x="16" y="18" width="2" height="2" transform="rotate(180 16 18)" fill="#8E8E8E"/>
+            <rect x="18" y="2" width="2" height="2" transform="rotate(90 18 2)" fill="#8E8E8E"/>
+            <rect y="18" width="2" height="2" transform="rotate(-90 0 18)" fill="#8E8E8E"/>
+            <rect x="18" y="18" width="2" height="2" transform="rotate(180 18 18)" fill="#8E8E8E"/>
+            <rect x="18" width="2" height="2" transform="rotate(90 18 0)" fill="#8E8E8E"/>
+          </svg>
+          <span>Background</span></h2>
+
+
+        <div class="sectionContent">
+
+          <div class="contentBar">
+            <label class="buttonIcon longB" for="uploadButton">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7778 0H15.5556V2.22222H13.3333V4.44444H15.5556V6.66667H17.7778V4.44444H20V2.22222H17.7778V0ZM11.1111 2.22222H8.88889H6.66667H4.44444H2.22222H0V4.44444V6.66667V8.88889V11.1111V13.3333V15.5556V17.7778H2.22222H4.44444H6.66667H8.88889H11.1111H13.3333H15.5556H17.7778V15.5556V13.3333V11.1111V8.88889H15.5556V11.1111V13.3333V15.5556H13.3333H11.1111H8.88889H6.66667H4.44444H2.22222V13.3333V11.1111V8.88889V6.66667V4.44444H4.44444H6.66667H8.88889H11.1111V2.22222ZM6.66667 6.66667H4.44444V8.88889V11.1111V13.3333H6.66667H8.88889H11.1111H13.3333V11.1111V8.88889H11.1111V11.1111H8.88889V8.88889H6.66667V6.66667Z" fill="#444444"/>
+              </svg>
+
+              Add Image
+            </label>
+            <input id="uploadButton" style="display:none;" type='file' />
+
+            <label class="buttonIcon longB" for="uploadButton">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7778 0H15.5556V2.22222H13.3333V4.44444H15.5556V6.66667H17.7778V4.44444H20V2.22222H17.7778V0ZM8.88889 2.22222H6.66667H4.44444H2.22222H0V4.44444V6.66667V8.88889V11.1111V13.3333V15.5556V17.7778H2.22222H4.44444H6.66667H8.88889H11.1111H13.3333H15.5556H17.7778V15.5556V13.3333V11.1111V8.88889H15.5556V11.1111V13.3333V15.5556H13.3333H11.1111H8.88889H6.66667H4.44444H2.22222V13.3333V11.1111V8.88889H4.44444H6.66667H8.88889H11.1111H13.3333V6.66667L11.1111 6.66667V4.44444V2.22222H8.88889ZM2.22222 4.44444H4.44444V6.66667H2.22222V4.44444ZM6.66667 6.66667V4.44444H8.88889V6.66667L6.66667 6.66667Z" fill="#444444"/>
+              </svg>
+
+              Add Video</label>
+            <input id="uploadButton" style="display:none;" type='file' />
+
+            <label  class="buttonIcon longB " for="webcamButton">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.88835 0H11.1106H13.3328V2.22222H11.1106H8.88835H6.66612L6.66612 0H8.88835ZM4.4439 4.44444L4.4439 2.22222H6.66612V4.44444H4.4439ZM4.4439 11.1111L2.22168 11.1111V8.88889V6.66667V4.44444H4.4439V6.66667V8.88889L4.4439 11.1111ZM6.66612 13.3333H4.4439V11.1111H6.66612L6.66612 13.3333ZM13.3328 13.3333H11.1106H8.88835H6.66612V15.5556H8.88835V17.7778H6.66612H4.4439V20H6.66612H8.88835H11.1106H13.3328H15.555V17.7778H13.3328H11.1106V15.5556H13.3328V13.3333ZM15.555 11.1111V13.3333H13.3328V11.1111H15.555ZM15.555 4.44444H17.7772V6.66667V8.88889V11.1111L15.555 11.1111V8.88889V6.66667V4.44444ZM15.555 4.44444V2.22222H13.3328V4.44444H15.555ZM11.1106 4.44444H8.88835V6.66667L6.66612 6.66667V8.88889H8.88835V11.1111H11.1106V8.88889H13.3328V6.66667L11.1106 6.66667V4.44444ZM11.1106 6.66667V8.88889H8.88835V6.66667H11.1106Z" fill="#444444"/>
+              </svg>
+
+              Use Webcam</label>
+            <input id="webcamButton" style="display:none;" type='button' />
+
+            <label  class="buttonIcon longB" for="blankButton">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.22168 0H4.4439H6.66612H8.88835H11.1106H13.3328V2.22222H11.1106V4.44444L11.1106 6.66667H13.3328H15.555V4.44444H17.7772V6.66667V8.88889V11.1111V13.3333V15.5556V17.7778V20H15.555H13.3328H11.1106H8.88835H6.66612H4.4439H2.22168V17.7778V15.5556V13.3333V11.1111V8.88889V6.66667V4.44444V2.22222V0ZM15.555 4.44444H13.3328V2.22222H15.555V4.44444ZM6.66612 2.22222H4.4439V4.44444V6.66667V8.88889V11.1111V13.3333V15.5556V17.7778H6.66612H8.88835H11.1106H13.3328H15.555V15.5556V13.3333V11.1111V8.88889H13.3328H11.1106H8.88835V6.66667V4.44444V2.22222H6.66612Z" fill="#444444"/>
+              </svg>
+              Blank Canvas</label>
+            <input id="blankButton" style="display:none;" type='button' />
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------------------------------- TILES -->
+              <div id="Filters" class="section">
+
+                <div class="help">
+                  <div class="tooltipContCont">
+                    <div class="tooltipCont">
+                      <div class="tooltip tttside">Change the curve levels of the image by applying filters like exposition and constrast.
+                      </div>
+                    </div>
+                  </div>
+                  <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.23048 10.815C6.23048 10.4163 6.29114 10.0523 6.41248 9.723C6.54248 9.385 6.83281 9.09033 7.28348 8.839C7.39614 8.76967 7.54348 8.68733 7.72548 8.592C7.90748 8.49667 8.08948 8.384 8.27148 8.254C8.46214 8.124 8.61814 7.97667 8.73948 7.812C8.86948 7.63867 8.93448 7.448 8.93448 7.24C8.93448 6.954 8.83048 6.733 8.62248 6.577C8.41448 6.41233 8.17614 6.33 7.90748 6.33C7.67348 6.33 7.47414 6.382 7.30948 6.486C7.14481 6.59 7.00181 6.71567 6.88048 6.863C6.76781 7.01033 6.67248 7.14467 6.59448 7.266L5.25548 6.33C5.48081 5.80133 5.83614 5.38967 6.32148 5.095C6.81548 4.80033 7.37014 4.653 7.98548 4.653C8.41881 4.653 8.84781 4.73967 9.27248 4.913C9.69714 5.08633 10.0481 5.36367 10.3255 5.745C10.6028 6.12633 10.7415 6.629 10.7415 7.253C10.7415 7.747 10.6375 8.163 10.4295 8.501C10.2301 8.83033 9.93114 9.12067 9.53248 9.372C9.28981 9.528 9.04714 9.671 8.80448 9.801C8.56181 9.92233 8.35814 10.061 8.19348 10.217C8.02881 10.373 7.94648 10.5723 7.94648 10.815H6.23048ZM6.26948 14V12.05H7.97248V14H6.26948Z" fill="#B1A8A8"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H1V17H14V1ZM0 0V18H15V0H0Z" fill="#B1A8A8"/>
+                  </svg>
+                </div>
+
+                <h2 class="sectiontitle">
+                  <svg class="sectionSVG" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="8" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="2" y="8" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="4" y="8" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="8" y="8" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="10" y="8" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="12" y="8" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="14" y="8" width="2" height="2" fill="#8E8E8E"/>
+                    <rect y="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="2" y="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect y="2" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="2" y="2" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="4" y="2" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="6" y="2" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="8" y="2" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="10" y="2" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="12" y="2" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="14" y="2" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="16" y="2" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="16" y="8" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="4" y="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="6" y="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="8" y="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="10" y="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="12" y="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="14" y="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="16" y="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="8" y="10" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="8" y="6" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="14" y="12" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="14" y="16" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="14" width="2" height="2" fill="#8E8E8E"/>
+                    <rect x="14" y="4" width="2" height="2" fill="#8E8E8E"/>
+                    <rect y="8" width="2" height="2" fill="#8E8E8E"/>
+                  </svg>
+
+
+                  <span>Filters</span></h2>
+                <div class="sectionContent">
+
+                    <div class="contentBar">
+
+
+                      <div class="sliderContainer">
+                        <label for="briSlider" class="sideLabels miniContainerLabel ">Brightness</label>
+                        <div class="sliderInputCont">
+                          <input type="range" min="0" max="300" value="150" class="slider" id="briSlider">
+                          <input class="sliderNumber" type="number" min="-100" max="100" value="0"  id="briInput">
+                        </div>
+                      </div>
+
+                      <div class="sliderContainer">
+                        <label for="contSlider" class="sideLabels miniContainerLabel">Contrast</label>
+                        <div class="sliderInputCont">
+                          <input type="range" min="0" max="300" value="150" class="slider" id="contSlider">
+                          <input  type="number" min="-100" max="100" value="0"  id="contInput" class="sliderNumber">
+                        </div>
+                      </div>
+
+                      <div class="sliderContainer">
+                        <label for="bluSlider" class="sideLabels miniContainerLabel">Blurriness</label>
+                        <div class="sliderInputCont">
+                          <input type="range" min="0" max="300" value="150" class="slider" id="bluSlider">
+                          <input type="number" min="-100" max="100" value="0"  id="bluInput" class="sliderNumber">
+                        </div>
+                      </div>
+
+
+                      <div >
+                        <label class="checkboxSmall" for="invertTile" id="smallCheckbox">Invert Image
+                          <input type="checkbox" id="invertTile" name="invertTile" value="invertTile">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+
+
+
+                      <div class="twobutton" id="filtersButton">
+                        <label class="buttonSecondary longB" for="resetFilterButton">Reset</label>
+                        <input id="resetFilterButton" style="display:none;" type='button' />
+
+                      </div>
+                  </div>
+
+                </div>
+              </div>
+
+  <!-- -------------------------------------------------------------------------- TILES -->
+
+      <div id="Stylization" class="section">
+        <div class="help">
+          <div class="tooltipContCont">
+            <div class="tooltipCont">
+              <div class="tooltip tttside">Choose and edit the tiles that compose the image pattern.
+              </div>
+            </div>
+          </div>
+          <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.23048 10.815C6.23048 10.4163 6.29114 10.0523 6.41248 9.723C6.54248 9.385 6.83281 9.09033 7.28348 8.839C7.39614 8.76967 7.54348 8.68733 7.72548 8.592C7.90748 8.49667 8.08948 8.384 8.27148 8.254C8.46214 8.124 8.61814 7.97667 8.73948 7.812C8.86948 7.63867 8.93448 7.448 8.93448 7.24C8.93448 6.954 8.83048 6.733 8.62248 6.577C8.41448 6.41233 8.17614 6.33 7.90748 6.33C7.67348 6.33 7.47414 6.382 7.30948 6.486C7.14481 6.59 7.00181 6.71567 6.88048 6.863C6.76781 7.01033 6.67248 7.14467 6.59448 7.266L5.25548 6.33C5.48081 5.80133 5.83614 5.38967 6.32148 5.095C6.81548 4.80033 7.37014 4.653 7.98548 4.653C8.41881 4.653 8.84781 4.73967 9.27248 4.913C9.69714 5.08633 10.0481 5.36367 10.3255 5.745C10.6028 6.12633 10.7415 6.629 10.7415 7.253C10.7415 7.747 10.6375 8.163 10.4295 8.501C10.2301 8.83033 9.93114 9.12067 9.53248 9.372C9.28981 9.528 9.04714 9.671 8.80448 9.801C8.56181 9.92233 8.35814 10.061 8.19348 10.217C8.02881 10.373 7.94648 10.5723 7.94648 10.815H6.23048ZM6.26948 14V12.05H7.97248V14H6.26948Z" fill="#B1A8A8"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H1V17H14V1ZM0 0V18H15V0H0Z" fill="#B1A8A8"/>
+          </svg>
+        </div>
+
+        <h2 class="sectiontitle">
+          <svg class="sectionSVG" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="2" width="2" height="2" transform="rotate(-90 4 2)" fill="black"/>
+            <rect x="6" y="2" width="2" height="2" transform="rotate(-90 6 2)" fill="black"/>
+            <rect x="8" y="2" width="2" height="2" transform="rotate(-90 8 2)" fill="black"/>
+            <rect x="10" y="2" width="2" height="2" transform="rotate(-90 10 2)" fill="black"/>
+            <rect x="12" y="2" width="2" height="2" transform="rotate(-90 12 2)" fill="black"/>
+            <rect x="14" y="2" width="2" height="2" transform="rotate(-90 14 2)" fill="black"/>
+            <rect x="2" y="2" width="2" height="2" transform="rotate(-90 2 2)" fill="black"/>
+            <rect y="2" width="2" height="2" transform="rotate(-90 0 2)" fill="black"/>
+            <rect y="10" width="2" height="2" transform="rotate(-90 0 10)" fill="black"/>
+            <rect x="10" y="18" width="2" height="2" transform="rotate(180 10 18)" fill="black"/>
+            <rect x="18" y="8" width="2" height="2" transform="rotate(90 18 8)" fill="black"/>
+            <rect y="4" width="2" height="2" transform="rotate(-90 0 4)" fill="black"/>
+            <rect x="4" y="18" width="2" height="2" transform="rotate(180 4 18)" fill="black"/>
+            <rect x="18" y="14" width="2" height="2" transform="rotate(90 18 14)" fill="black"/>
+            <rect y="12" width="2" height="2" transform="rotate(-90 0 12)" fill="black"/>
+            <rect x="8" y="10" width="2" height="2" transform="rotate(-90 8 10)" fill="black"/>
+            <rect x="6" y="8" width="2" height="2" transform="rotate(-90 6 8)" fill="black"/>
+            <rect x="6" y="10" width="2" height="2" transform="rotate(-90 6 10)" fill="black"/>
+            <rect x="8" y="8" width="2" height="2" transform="rotate(-90 8 8)" fill="black"/>
+            <rect x="10" y="8" width="2" height="2" transform="rotate(-90 10 8)" fill="black"/>
+            <rect x="10" y="10" width="2" height="2" transform="rotate(-90 10 10)" fill="black"/>
+            <rect x="10" y="12" width="2" height="2" transform="rotate(-90 10 12)" fill="black"/>
+            <rect x="8" y="12" width="2" height="2" transform="rotate(-90 8 12)" fill="black"/>
+            <rect x="6" y="12" width="2" height="2" transform="rotate(-90 6 12)" fill="black"/>
+            <rect x="4" y="10" width="2" height="2" transform="rotate(-90 4 10)" fill="black"/>
+            <rect x="8" y="6" width="2" height="2" transform="rotate(-90 8 6)" fill="black"/>
+            <rect x="12" y="10" width="2" height="2" transform="rotate(-90 12 10)" fill="black"/>
+            <rect x="8" y="14" width="2" height="2" transform="rotate(-90 8 14)" fill="black"/>
+            <rect x="12" y="18" width="2" height="2" transform="rotate(180 12 18)" fill="black"/>
+            <rect x="18" y="6" width="2" height="2" transform="rotate(90 18 6)" fill="black"/>
+            <rect y="6" width="2" height="2" transform="rotate(-90 0 6)" fill="black"/><rect x="6" y="18" width="2" height="2" transform="rotate(180 6 18)" fill="black"/><rect x="18" y="12" width="2" height="2" transform="rotate(90 18 12)" fill="black"/><rect y="14" width="2" height="2" transform="rotate(-90 0 14)" fill="black"/><rect x="14" y="18" width="2" height="2" transform="rotate(180 14 18)" fill="black"/><rect x="18" y="4" width="2" height="2" transform="rotate(90 18 4)" fill="black"/><rect y="8" width="2" height="2" transform="rotate(-90 0 8)" fill="black"/><rect x="8" y="18" width="2" height="2" transform="rotate(180 8 18)" fill="black"/><rect x="18" y="10" width="2" height="2" transform="rotate(90 18 10)" fill="black"/><rect y="16" width="2" height="2" transform="rotate(-90 0 16)" fill="black"/><rect x="16" y="18" width="2" height="2" transform="rotate(180 16 18)" fill="black"/><rect x="18" y="2" width="2" height="2" transform="rotate(90 18 2)" fill="black"/><rect y="18" width="2" height="2" transform="rotate(-90 0 18)" fill="black"/><rect x="18" y="18" width="2" height="2" transform="rotate(180 18 18)" fill="black"/><rect x="18" width="2" height="2" transform="rotate(90 18 0)" fill="black"/>
+          </svg>
+
+          <span>Tiles</span></h2>
+        <div class="sectionContent">
+
+
+            <div class="contentBar">
+              <div id="tileCust">
+                  <h3>Select tile(s):</h3>
+                  <div id="tileListContainer"> </div>
+              </div>
+
+              <div style="margin-bottom:var(--space-4)">
+                <label class="checkboxSmall" id="smallCheckbox2" for="mixTile">Use only one
+                  <input type="checkbox" id="mixTile" name="mixTile" value="mixTile">
+                  <span class="checkmark"></span>
+                </label>
+
+              </div>
+
+
+
+              <div class="miniContainer">
+                <div class="miniContainerTitle">Settings</div>
+
+                <div class="settingsText">
+                  <div class="colorContainer">
+                    <div class="colorBox">
+                      <label class="sideLabels miniContainerLabel" for="tileColour">Tile Color</label>
+                      <input type='text' id='color-picker-tile' value='black' />
+                    </div>
+                    <div class="colorBox">
+
+                      <label class="sideLabels miniContainerLabel" for="backgroundColour">Back Color</label>
+                      <input type='text' id='color-picker-background' value='white' />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="settingsText">
+                  <div class="sliderContainer" style="margin-bottom:0.5rem;">
+                    <div class="sliderContainer" id="sizeMargin">
+                      <label for="maxShadeSlider" class="sideLabels miniContainerLabel">Size</label>
+                      <div class="sliderInputCont">
+                        <input type="range" min="0" max="300" value="100" class="slider" id="maxSize">
+                        <input class="sliderNumber" type="number" min="0" max="3" value="1"  id="sizeInput">
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="settingsText">
+                  <div class="sliderContainer" style="margin-bottom:1rem;">
+                  <div class="sliderContainer" id="sizeMargin" >
+                    <label for="maxValueSlider"  class="sideLabels miniContainerLabel">Values</label>
+                    <div class="sliderInputCont">
+                      <input type="range" min="0" max="100" value="100" class="slider" id="maxValue">
+                      <input class="sliderNumber" type="number" min="0" max="1" value="1"  id="valueInput">
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="settingsText">
+                  <div class="rotatecontainer">
+                    <div class="containerblock">
+                      <label  class="checkboxSmall  miniContainerLabel " for="rotateTile">Rotate Tiles
+                        <input type="checkbox" id="rotateTile" name="rotateTile" value="rotateTile">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="smallradio">
+                      <div>
+                        <input type="radio" id="rotation" name="rotation" value="Random">
+                        <label for="rotation">Random</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="rotation" name="rotation" value="Sequence">
+                        <label for="rotation">In Sequence</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="rotation" name="rotation" value="Shade"
+                               checked>
+                        <label for="rotation">According to shade</label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="twobutton" id="tiletwoButton">
+                <!--<div class="buttonTextBoxCont"> -->
+                  <label  class="buttonSecondary smallB" for="resetTiles">Reset</label>
+                  <input id="resetTiles" style="display:none;" type='button' />
+
+                  <label  class="button smallB" for="randomize">Randomize</label>
+                  <input id="randomize" style="display:none;" type='button' />
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+    <!-- -------------------------------------------------------------------------- GRID -->
+        <div id="Grid" class="section">
+
+          <div class="help">
+            <div class="tooltipContCont">
+              <div class="tooltipCont">
+                <div class="tooltip tttside">Configure the grid size.
+                </div>
+              </div>
+            </div>
+            <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.23048 10.815C6.23048 10.4163 6.29114 10.0523 6.41248 9.723C6.54248 9.385 6.83281 9.09033 7.28348 8.839C7.39614 8.76967 7.54348 8.68733 7.72548 8.592C7.90748 8.49667 8.08948 8.384 8.27148 8.254C8.46214 8.124 8.61814 7.97667 8.73948 7.812C8.86948 7.63867 8.93448 7.448 8.93448 7.24C8.93448 6.954 8.83048 6.733 8.62248 6.577C8.41448 6.41233 8.17614 6.33 7.90748 6.33C7.67348 6.33 7.47414 6.382 7.30948 6.486C7.14481 6.59 7.00181 6.71567 6.88048 6.863C6.76781 7.01033 6.67248 7.14467 6.59448 7.266L5.25548 6.33C5.48081 5.80133 5.83614 5.38967 6.32148 5.095C6.81548 4.80033 7.37014 4.653 7.98548 4.653C8.41881 4.653 8.84781 4.73967 9.27248 4.913C9.69714 5.08633 10.0481 5.36367 10.3255 5.745C10.6028 6.12633 10.7415 6.629 10.7415 7.253C10.7415 7.747 10.6375 8.163 10.4295 8.501C10.2301 8.83033 9.93114 9.12067 9.53248 9.372C9.28981 9.528 9.04714 9.671 8.80448 9.801C8.56181 9.92233 8.35814 10.061 8.19348 10.217C8.02881 10.373 7.94648 10.5723 7.94648 10.815H6.23048ZM6.26948 14V12.05H7.97248V14H6.26948Z" fill="#B1A8A8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H1V17H14V1ZM0 0V18H15V0H0Z" fill="#B1A8A8"/>
+            </svg>
+          </div>
+
+          <h2 class="sectiontitle">
+            <svg class="sectionSVG" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect y="4" width="2" height="2" transform="rotate(-90 0 4)" fill="#8E8E8E"/>
+              <rect y="10" width="2" height="2" transform="rotate(-90 0 10)" fill="#8E8E8E"/>
+              <rect y="16" width="2" height="2" transform="rotate(-90 0 16)" fill="#8E8E8E"/>
+              <rect x="2" y="2" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="6" y="2" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="10" y="2" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="2.2002" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="2" y="6" width="2" height="2" transform="rotate(-90 2 6)" fill="#8E8E8E"/>
+              <rect x="2" y="10" width="2" height="2" transform="rotate(-90 2 10)" fill="#8E8E8E"/>
+              <rect x="2" y="14.4004" width="2" height="2" transform="rotate(-90 2 14.4004)" fill="#8E8E8E"/>
+              <rect x="2" y="4" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="4" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="4.2002" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="4" y="4" width="2" height="2" transform="rotate(-90 4 4)" fill="#8E8E8E"/>
+              <rect x="4" y="10" width="2" height="2" transform="rotate(-90 4 10)" fill="#8E8E8E"/>
+              <rect x="4" y="16" width="2" height="2" transform="rotate(-90 4 16)" fill="#8E8E8E"/>
+              <rect x="2" y="6" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="6" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="6.2002" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="6" y="10" width="2" height="2" transform="rotate(-90 6 10)" fill="#8E8E8E"/>
+              <rect x="2" y="8" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="6" y="8" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="10" y="8" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="8.2002" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="4" width="2" height="2" transform="rotate(-90 8 4)" fill="#8E8E8E"/>
+              <rect x="8" y="10" width="2" height="2" transform="rotate(-90 8 10)" fill="#8E8E8E"/>
+              <rect x="8" y="16" width="2" height="2" transform="rotate(-90 8 16)" fill="#8E8E8E"/>
+              <rect x="2" y="10" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="10" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="10.2002" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="10" y="4" width="2" height="2" transform="rotate(-90 10 4)" fill="#8E8E8E"/>
+              <rect x="10" y="10" width="2" height="2" transform="rotate(-90 10 10)" fill="#8E8E8E"/>
+              <rect x="2" y="12" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="12" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="12.2002" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="12" y="4" width="2" height="2" transform="rotate(-90 12 4)" fill="#8E8E8E"/>
+              <rect x="12" y="10" width="2" height="2" transform="rotate(-90 12 10)" fill="#8E8E8E"/>
+              <rect x="12" y="16" width="2" height="2" transform="rotate(-90 12 16)" fill="#8E8E8E"/>
+              <rect x="2" y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="6" y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="10" y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="14.2002" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="4" width="2" height="2" transform="rotate(-90 14 4)" fill="#8E8E8E"/>
+              <rect x="14" y="10" width="2" height="2" transform="rotate(-90 14 10)" fill="#8E8E8E"/>
+              <rect x="14" y="14.4004" width="2" height="2" transform="rotate(-90 14 14.4004)" fill="#8E8E8E"/>
+              <rect x="2" y="16" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="16" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="16" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="16" y="4" width="2" height="2" transform="rotate(-90 16 4)" fill="#8E8E8E"/>
+              <rect x="16" y="10" width="2" height="2" transform="rotate(-90 16 10)" fill="#8E8E8E"/>
+              <rect x="16" y="16" width="2" height="2" transform="rotate(-90 16 16)" fill="#8E8E8E"/>
+            </svg>
+
+
+            <span>Grid</span></h2>
+          <div class="sectionContent">
+
+            <div class="contentBar">
+              <!--<h3>Customize the grid:</h3> -->
+              <div>
+                <div class="settingsItem SILong" style="max-width:120px">
+                  <label class="miniContainerLabel" for="columns">Columns </label>
+                  <input class="inputDefault change_value_up_down textNumInp " type="number" id="columns" name="columns"
+                         min="1" max="200">
+                </div>
+                <div class="settingsItem SILong" style="max-width:120px">
+                  <label class="miniContainerLabel " for="rows">Rows </label>
+                  <input class="inputDefault change_value_up_down textNumInp " type="number" id="rows" name="rows"
+                         min="1" max="200">
+                </div>
+              </div>
+
+              <div >
+                <label class="checkboxSmall" for="showGrid" style="display:none"> Show grid
+                  <input type="checkbox" id="showGrid" name="showGrid" value="showGrid">
+                  <span class="checkmark"></span>
+                </label>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+<!-- -------------------------------------------------------------------------- TYPE -->
+
+        <div id="Type" class="section">
+
+          <div class="help">
+            <div class="tooltipContCont">
+              <div class="tooltipCont">
+                <div class="tooltip tttside">Add text boxes and select them to edit their different parameters.
+                </div>
+              </div>
+            </div>
+            <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.23048 10.815C6.23048 10.4163 6.29114 10.0523 6.41248 9.723C6.54248 9.385 6.83281 9.09033 7.28348 8.839C7.39614 8.76967 7.54348 8.68733 7.72548 8.592C7.90748 8.49667 8.08948 8.384 8.27148 8.254C8.46214 8.124 8.61814 7.97667 8.73948 7.812C8.86948 7.63867 8.93448 7.448 8.93448 7.24C8.93448 6.954 8.83048 6.733 8.62248 6.577C8.41448 6.41233 8.17614 6.33 7.90748 6.33C7.67348 6.33 7.47414 6.382 7.30948 6.486C7.14481 6.59 7.00181 6.71567 6.88048 6.863C6.76781 7.01033 6.67248 7.14467 6.59448 7.266L5.25548 6.33C5.48081 5.80133 5.83614 5.38967 6.32148 5.095C6.81548 4.80033 7.37014 4.653 7.98548 4.653C8.41881 4.653 8.84781 4.73967 9.27248 4.913C9.69714 5.08633 10.0481 5.36367 10.3255 5.745C10.6028 6.12633 10.7415 6.629 10.7415 7.253C10.7415 7.747 10.6375 8.163 10.4295 8.501C10.2301 8.83033 9.93114 9.12067 9.53248 9.372C9.28981 9.528 9.04714 9.671 8.80448 9.801C8.56181 9.92233 8.35814 10.061 8.19348 10.217C8.02881 10.373 7.94648 10.5723 7.94648 10.815H6.23048ZM6.26948 14V12.05H7.97248V14H6.26948Z" fill="#B1A8A8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H1V17H14V1ZM0 0V18H15V0H0Z" fill="#B1A8A8"/>
+            </svg>
+          </div>
+
+          <h2 class="sectiontitle">
+            <svg class="sectionSVG" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="10" y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="6" y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="12" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="10" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="8" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="6" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="4" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="2" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="10" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="12" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="6" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="2" y="2" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="2" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="4" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="2" width="2" height="2" fill="#8E8E8E"/>
+            </svg>
+            <span>Text</span></h2>
+          <div class="sectionContent">
+
+            <div class="contentBar">
+
+              <!-- <div class="line"></div> -->
+              <div class="buttonTextBoxCont">
+                <label  class="button longB" for="addText">Add Text Box</label>
+                <input id="addText" style="display:none;" type='button' />
+              </div>
+
+              <div id="textboxGroup" class="textboxGroup">
+              </div>
+
+
+              <div class="miniContainer">
+                <div class="miniContainerTitle">Settings</div>
+
+                <div class="miniContainerLabel textFontCont labelSmall">Font
+                <select id="fonts">
+                </select> </div>
+
+                <div class="settingsText">
+                 <div class="settingsItem">
+
+                    <label  for="textSiz"class="labelSmall" >
+                      <svg class="miniContainerSVG" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 4.3335V6.8335H11.6667V16.8335H14.1667V6.8335H18.3333V4.3335H7.5ZM2.5 11.0002H5V16.8335H7.5V11.0002H10V8.50016H2.5V11.0002Z" fill="#B5B5B5"/>
+                      </svg>
+                      <span class="label">Size</span>
+
+                    </label>
+                    <input class="inputDefault change_value_up_down textNumInp" type="number" id="textSiz" name="textSiz" value="1">
+                 </div>
+
+                 <div class="settingsAlign">
+                   <div>
+                      <label  for="leftalign" class="align AS" class="labelSmall">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 12.5H2.5V14.1667H12.5V12.5ZM12.5 5.83333H2.5V7.5H12.5V5.83333ZM2.5 10.8333H17.5V9.16667H2.5V10.8333ZM2.5 17.5H17.5V15.8333H2.5V17.5ZM2.5 2.5V4.16667H17.5V2.5H2.5Z" fill="#B5B5B5"/>
+                        </svg>
+                      </label>
+                      <input style="display:none" class="textNumInp" type="radio" id="leftalign" name="align" value="left">
+                    </div>
+                   <div>
+                      <label  for="centeralign" class="align" class="labelSmall">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.83333 12.5V14.1667H14.1667V12.5H5.83333ZM2.5 17.5H17.5V15.8333H2.5V17.5ZM2.5 10.8333H17.5V9.16667H2.5V10.8333ZM5.83333 5.83333V7.5H14.1667V5.83333H5.83333ZM2.5 2.5V4.16667H17.5V2.5H2.5Z" fill="#B5B5B5"/>
+                        </svg>
+                      </label>
+                      <input style="display:none" class="textNumInp" type="radio" id="centeralign" name="align" value="center">
+                   </div>
+                   <div>
+                      <label  for="rightalign" class="align" class="labelSmall">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 17.5H17.5V15.8333H2.5V17.5ZM7.5 14.1667H17.5V12.5H7.5V14.1667ZM2.5 10.8333H17.5V9.16667H2.5V10.8333ZM7.5 7.5H17.5V5.83333H7.5V7.5ZM2.5 2.5V4.16667H17.5V2.5H2.5Z" fill="#B5B5B5"/>
+                        </svg>
+                      </label>
+                      <input style="display:none" class="textNumInp" type="radio" id="rightalign" name="align" value="right" >
+                   </div>
+
+                 </div>
+
+                </div>
+
+
+                <div class="settingsText">
+                 <div class="settingsItem">
+
+                  <label  for="textKerning" class="labelSmall">
+                    <svg class="miniContainerSVG" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.175 10.8332L14.175 13.3332L17.5 9.99984L14.175 6.6665L14.175 9.1665L5.825 9.1665L5.825 6.6665L2.5 9.99984L5.825 13.3332L5.825 10.8332L14.175 10.8332Z" fill="#BEBEBE"/>
+                    </svg>
+                    <span class="label">Kerning</span>
+                  </label>
+                  <input class="inputDefault change_value_up_down textNumInp" type="number" id="textKerning" name="textKerning"
+                          min="1" max="10" value="1">
+                 </div>
+
+                 <div class="settingsItem" class="labelSmall">
+                  <label  for="textLineHeight">
+                    <svg class="miniContainerSVG" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 5.83317H7.08333L4.16667 2.9165L1.25 5.83317H3.33333V14.1665H1.25L4.16667 17.0832L7.08333 14.1665H5V5.83317ZM8.33333 4.1665V5.83317H18.3333V4.1665H8.33333ZM8.33333 15.8332H18.3333V14.1665H8.33333V15.8332ZM8.33333 10.8332H18.3333V9.1665H8.33333V10.8332Z" fill="#B5B5B5"/>
+                    </svg>
+                    <span class="label">Line Height</span>
+
+                  </label>
+                  <input class="inputDefault change_value_up_down textNumInp" type="number" id="textLineHeight" name="textLineHeight"
+                          min="1" max="10" value="1">
+                 </div>
+                </div>
+
+                <div class="settingsText">
+                 <div class="settingsItem">
+
+                  <label class="miniContainerLabel labelSmall" for="textX">X</label>
+                  <span class="label">Position in X</span>
+                  <input class="inputDefault change_value_up_down textNumInp " type="number" id="textX" name="textX" value="2">
+                 </div>
+
+                 <div class="settingsItem">
+
+                  <label class="miniContainerLabel labelSmall" for="textY">Y</label>
+                  <span class="label">Position in Y</span>
+                  <input class="inputDefault change_value_up_down textNumInp" type="number" id="textY" name="textY" value="2">
+                 </div>
+                </div>
+
+
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+    <!-- -------------------------------------------------------------------------- DRAW -->
+
+
+
+        <div id="Draw" class="section">
+
+          <div class="help">
+            <div class="tooltipContCont">
+              <div class="tooltipCont">
+                <div class="tooltip tttside">Draw on the canvas.
+                </div>
+              </div>
+            </div>
+            <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.23048 10.815C6.23048 10.4163 6.29114 10.0523 6.41248 9.723C6.54248 9.385 6.83281 9.09033 7.28348 8.839C7.39614 8.76967 7.54348 8.68733 7.72548 8.592C7.90748 8.49667 8.08948 8.384 8.27148 8.254C8.46214 8.124 8.61814 7.97667 8.73948 7.812C8.86948 7.63867 8.93448 7.448 8.93448 7.24C8.93448 6.954 8.83048 6.733 8.62248 6.577C8.41448 6.41233 8.17614 6.33 7.90748 6.33C7.67348 6.33 7.47414 6.382 7.30948 6.486C7.14481 6.59 7.00181 6.71567 6.88048 6.863C6.76781 7.01033 6.67248 7.14467 6.59448 7.266L5.25548 6.33C5.48081 5.80133 5.83614 5.38967 6.32148 5.095C6.81548 4.80033 7.37014 4.653 7.98548 4.653C8.41881 4.653 8.84781 4.73967 9.27248 4.913C9.69714 5.08633 10.0481 5.36367 10.3255 5.745C10.6028 6.12633 10.7415 6.629 10.7415 7.253C10.7415 7.747 10.6375 8.163 10.4295 8.501C10.2301 8.83033 9.93114 9.12067 9.53248 9.372C9.28981 9.528 9.04714 9.671 8.80448 9.801C8.56181 9.92233 8.35814 10.061 8.19348 10.217C8.02881 10.373 7.94648 10.5723 7.94648 10.815H6.23048ZM6.26948 14V12.05H7.97248V14H6.26948Z" fill="#B1A8A8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H1V17H14V1ZM0 0V18H15V0H0Z" fill="#B1A8A8"/>
+            </svg>
+          </div>
+
+          <h2 class="sectiontitle">
+            <svg class="sectionSVG" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="2" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="4" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="12" y="4" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="10" y="6" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="8" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="6" y="6" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="4" y="8" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="6" y="10" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="4" y="12" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="2" y="10" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="12" y="16" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="16" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="16" y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="10" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="16" y="12" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="2" y="16" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="4" y="16" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="6" y="16" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="8" y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="10" y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="12" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="14" y="2" width="2" height="2" fill="#8E8E8E"/>
+              <rect y="14" width="2" height="2" fill="#8E8E8E"/>
+              <rect x="2" y="12" width="2" height="2" fill="#8E8E8E"/>
+            </svg>
+
+            <span>Draw</span></h2>
+
+          <div class="sectionContent">
+
+                <div class="contentBar">
+
+                  <div class="brushes">
+
+                    <div class="buttonSequence" style="margin-bottom:0.8rem">
+                      <div class="buttonSeqInd brush BSS" id="pencil" type='button' >
+                        <svg class="buttonBar brushesIcon" width="18" height="18" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="70" width="10" height="10" fill="#444444"/>
+                          <rect x="60" y="20" width="10" height="10" fill="#444444"/>
+                          <rect x="70" y="20" width="10" height="10" fill="#444444"/>
+                          <rect x="60" y="10" width="10" height="10" fill="#444444"/>
+                          <rect y="80" width="10" height="10" fill="#444444"/>
+                          <rect x="10" y="60" width="10" height="10" fill="#444444"/>
+                          <rect x="20" y="70" width="10" height="10" fill="#444444"/>
+                          <rect x="20" y="60" width="10" height="10" fill="#444444"/>
+                          <rect x="20" y="50" width="10" height="10" fill="#444444"/>
+                          <rect x="30" y="60" width="10" height="10" fill="#444444"/>
+                          <rect x="30" y="50" width="10" height="10" fill="#444444"/>
+                          <rect x="40" y="40" width="10" height="10" fill="#444444"/>
+                          <rect x="30" y="40" width="10" height="10" fill="#444444"/>
+                          <rect x="40" y="30" width="10" height="10" fill="#444444"/>
+                          <rect x="50" y="40" width="10" height="10" fill="#444444"/>
+                          <rect x="40" y="50" width="10" height="10" fill="#444444"/>
+                          <rect x="80" y="10" width="10" height="10" fill="#444444"/>
+                          <rect x="60" y="30" width="10" height="10" fill="#444444"/>
+                          <rect x="50" y="20" width="10" height="10" fill="#444444"/>
+                          <rect x="50" y="30" width="10" height="10" fill="#444444"/>
+                        </svg>
+                        Pencil</div>
+
+                      <div class="buttonSeqInd brush" id="eraser" type='button' >
+                        <svg class="buttonBar brushesIcon" width="18" height="18" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 70H20V80H10V70Z" fill="#444444"/>
+                          <path d="M0 60H10V70H0V60Z" fill="#444444"/>
+                          <path d="M10 50H20V60H10V50Z" fill="#444444"/>
+                          <path d="M20 40H30V50H20V40Z" fill="#444444"/>
+                          <path d="M30 30H40V40H30V30Z" fill="#444444"/>
+                          <path d="M40 20H50V30H40V20Z" fill="#444444"/>
+                          <path d="M50 10H60V20H50V10Z" fill="#444444"/>
+                          <path d="M60 0H70V10H60V0Z" fill="#444444"/>
+                          <path d="M70 10H80V20H70V10Z" fill="#444444"/>
+                          <path d="M80 20H90V30H80V20Z" fill="#444444"/>
+                          <path d="M40 80H50V90H40V80Z" fill="#444444"/>
+                          <path d="M50 80H60V90H50V80Z" fill="#444444"/>
+                          <path d="M70 30H80V40H70V30Z" fill="#444444"/>
+                          <path d="M60 40H70V50H60V40Z" fill="#444444"/>
+                          <path d="M50 50H60V60H50V50Z" fill="#444444"/>
+                          <path d="M40 60H50V70H40V60Z" fill="#444444"/>
+                          <path d="M30 50H40V60H30V50Z" fill="#444444"/>
+                          <path d="M30 70H40V80H30V70Z" fill="#444444"/>
+                          <path d="M30 80H40V90H30V80Z" fill="#444444"/>
+                          <path d="M20 80H30V90H20V80Z" fill="#444444"/>
+                        </svg>
+                        Eraser
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                  <div class="miniContainer">
+                    <div class="miniContainerTitle">Brush Settings</div>
+                      <div class="sliderContainer">
+                        <label for="brushSize " class="sideLabels miniContainerLabel">Size</label>
+                        <div class="sliderInputCont">
+                          <input  type="range" min="1" max="8" value="1" class="slider" id="brushSize">
+                          <input class="sliderNumber" type="number" min="0" max="8" value="1"  id="brushSizeInput">
+                        </div>
+                      </div>
+                      <div class="sliderContainer">
+                        <label for="brushShade" class="sideLabels miniContainerLabel">Lightness</label>
+                        <div class="sliderInputCont">
+                          <input type="range" min="0" max="100" value="0" class="slider" id="brushShade">
+                          <input class="sliderNumber" type="number" min="0" max="100" value="0"  id="lightInput">
+                        </div>
+                      </div>
+                      <div class="sliderContainer" style="display:none">
+                        <label for="brushHard" class="sideLabels miniContainerLabel">Hardness</label>
+                        <input type="range" min="0" max="100" value="100" class="slider" id="brushHard">
+                      </div>
+                    </div>
+
+                    <div class="twobutton" style="margin-top:1.4rem;">
+                      <label class="buttonSecondary longB" for="eraseDraw">Erase All</label>
+                      <input id="eraseDraw" style="display:none;" type='button' />
+                    </div>
+                  </div>
+
+             </div>
+          </div>
+
+
+
+        <!-- -------------------------------------------------------------------------- EXPORT -->
+
+        <div id="Export" class="section">
+
+          <div class="help">
+            <div class="tooltipContCont">
+              <div class="tooltipCont">
+                <div class="tooltip tttside">Export your final artwork as an image or a video.
+                </div>
+              </div>
+            </div>
+            <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.23048 10.815C6.23048 10.4163 6.29114 10.0523 6.41248 9.723C6.54248 9.385 6.83281 9.09033 7.28348 8.839C7.39614 8.76967 7.54348 8.68733 7.72548 8.592C7.90748 8.49667 8.08948 8.384 8.27148 8.254C8.46214 8.124 8.61814 7.97667 8.73948 7.812C8.86948 7.63867 8.93448 7.448 8.93448 7.24C8.93448 6.954 8.83048 6.733 8.62248 6.577C8.41448 6.41233 8.17614 6.33 7.90748 6.33C7.67348 6.33 7.47414 6.382 7.30948 6.486C7.14481 6.59 7.00181 6.71567 6.88048 6.863C6.76781 7.01033 6.67248 7.14467 6.59448 7.266L5.25548 6.33C5.48081 5.80133 5.83614 5.38967 6.32148 5.095C6.81548 4.80033 7.37014 4.653 7.98548 4.653C8.41881 4.653 8.84781 4.73967 9.27248 4.913C9.69714 5.08633 10.0481 5.36367 10.3255 5.745C10.6028 6.12633 10.7415 6.629 10.7415 7.253C10.7415 7.747 10.6375 8.163 10.4295 8.501C10.2301 8.83033 9.93114 9.12067 9.53248 9.372C9.28981 9.528 9.04714 9.671 8.80448 9.801C8.56181 9.92233 8.35814 10.061 8.19348 10.217C8.02881 10.373 7.94648 10.5723 7.94648 10.815H6.23048ZM6.26948 14V12.05H7.97248V14H6.26948Z" fill="#B1A8A8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1H1V17H14V1ZM0 0V18H15V0H0Z" fill="#B1A8A8"/>
+            </svg>
+          </div>
+
+          <h2 class="sectiontitle">
+              <svg class="sectionSVG" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="4" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="6" y="2" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="10" y="2" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="10" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="8" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="6" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="8" y="2" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="8" y="4" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="10" y="4" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="6" y="6" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="8" y="8" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="6" y="8" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="8" y="6" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="6" y="10" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="4" y="8" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="2" y="6" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="8" y="10" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="8" y="12" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="8" y="16" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="6" y="16" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="4" y="16" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="2" y="16" width="2" height="2" fill="#8E8E8E"/>
+                <rect y="16" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="12" y="16" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="14" y="16" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="16" y="16" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="10" y="16" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="10" y="10" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="12" y="8" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="14" y="6" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="10" y="8" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="12" y="6" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="10" y="6" width="2" height="2" fill="#8E8E8E"/>
+                <rect x="4" y="6" width="2" height="2" fill="#8E8E8E"/>
+              </svg>
+
+              <span>Export</span></h2>
+            <div class="sectionContent">
+            <div class="contentBar">
+
+              <div>
+
+                <div class="buttonSequence" style="margin-bottom:0.8rem">
+                  <label class="buttonSeqInd BSS" for="exportImage" type='button' >Image</label>
+                  <input style="display:none" type="radio" id="exportImage" name="exportFormat" value="Image" checked>
+                  <label class="buttonSeqInd" for="exportVideo" type='button' >Video</label>
+                  <input style="display:none" type="radio" id="exportVideo" name="exportFormat" value="Video">
+                </div>
+
+                <div class="buttonSequence" id="imageExpCont">
+                  <label class="buttonSeqInd BSS" for="exportPNG" type='button' >.png</label>
+                  <input style="display:none" type="radio" id="exportPNG" name="exportFile" value="PNG" checked>
+                  <label class="buttonSeqInd" for="exportPDF" type='button' >.pdf</label>
+                  <input style="display:none" type="radio" id="exportPDF" name="exportFile" value="PDF">
+                  <label class="buttonSeqInd" for="exportSVG" type='button' >.svg</label>
+                  <input style="display:none" type="radio" id="exportSVG" name="exportFile" value="SVG">
+                </div>
+
+                <div class="buttonSequence" id="videoExpCont" style="display:none">
+                  <label class="buttonSeqInd BSS" for="exportGIF" type='button' >.gif</label>
+                  <input style="display:none" type="radio" id="exportGIF" name="exportFile" value="GIF">
+                  <label class="buttonSeqInd" for="exportMP4" type='button' >.webm</label>
+                  <input style="display:none" type="radio" id="exportMP4" name="exportFile" value="MP4">
+                  <div></div>
+                </div>
+
+
+
+                <div class="miniContainer" style="margin-top:1.8rem">
+                  <div class="miniContainerTitle" >Settings</div>
+
+                  <div id="pdfSettings" style="display:none">
+                    <div class="miniContainerLabel textFontCont labelSmall" >
+                      Format
+                      <select name="formatpdf" id="formatpdf" style="width:45%;">
+                        <option value="custom">Original</option>
+                        <option value="a2">A2</option>
+                        <option value="a3">A3</option>
+                        <option value="a4">A4</option>
+
+                      </select>
+                    </div>
+                    <div class="miniContainerLabel textFontCont labelSmall" id="oriSettings">
+                      Orientation
+                      <select name="oripdf" id="oripdf" style="width:45%;">
+                        <option value="Portrait">Portrait</option>
+                        <option value="Landscape">Landscape</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+
+                  <div id="proportionSettings">
+                    <div >
+                      <div class="settingsItem SILong">
+                        <label class="miniContainerLabel " for="imageW">W </label>
+                        <span>
+                        <input class="inputDefault  change_value_up_down textNumInp" type="number" id="imageW" name="imageW"
+                               min="4" max="7000"><span style="padding-left:4px">px</span></span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="settingsItem SILong">
+                        <label class="miniContainerLabel " for="imageH">H </label>
+                        <span>
+                        <input class="inputDefault  change_value_up_down textNumInp" type="number" id="imageH" name="imageH"
+                               min="4" max="7000"><span style="padding-left:4px">px</span></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="motionSettings" style="display:none" >
+
+                    <div class="twobutton">
+                      <label class="buttonSecondary smallB" for="startRecording" id="RL">Record</label>
+                      <input id="startRecording" style="display:none;" type='button' />
+                      <label class="buttonSecondary smallB" for="stopRecording" id="SRL" style="opacity:0.5; pointer-events:none;">Stop</label>
+                      <input id="stopRecording" style="display:none;" type='button' />
+                    </div>
+                  </div>
+                  <div style="display:none" class="recordSaved" id="RS">Record saved! Export it.</div>
+
+                  </div>
+
+                  <div class="buttonExportBoxCont">
+                    <label class="button longB" for="exportButton">Export</label>
+                    <input id="exportButton" style="display:none;" type='button' />
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="footnote">@2021</div>
+      </div>
+
+
+      <div class="recordingBubble" id="RB" style="display:none">
+        <div class="bubbleContainer">
+          Recording <span class="bubble"></span>
+        </div>
+        <div class="bubbleButton">
+          <label class="buttonSecondary smallB" for="stopRecording2">Stop</label>
+          <input id="stopRecording2" style="display:none;" type='button' />
+        </div>
+      </div>
+
+  <!----------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------->
+
+  <div class="bottomcontainer"  style="display:none">
+    <div class="groupbot">
+       <div class="contlab" id="pause">
+       </div>
+       <div class="contlab" id="stop">
+       </div>
+     </div>
+  </div>
+
+
+  <div class="bottomcontainer" id="bottomcontainer" style="display:none">
+    <input style="display:none" type="range" min="1" max="300" value="100" class="slider" id="zoomSlider">
+
+    <div class="groupbot">
+      <div class="contlab" id="undo">
+        <span class="label">Undo</span>
+        <svg class="botbutton" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 14H6V16H4V14Z" fill="#444444"/>
+          <path d="M8 10H10V12H8V10Z" fill="#444444"/>
+          <path d="M2 12H4V14H2V12Z" fill="#444444"/>
+          <path d="M4 12H6V14H4V12Z" fill="#444444"/>
+          <path d="M6 12H8V14H6V12Z" fill="#444444"/>
+          <path d="M0 10H2V12H0V10Z" fill="#444444"/>
+          <path d="M4 10H6V12H4V10Z" fill="#444444"/>
+          <path d="M4 8H6V10H4V8Z" fill="#444444"/>
+          <path d="M6 4H8V6H6V4Z" fill="#444444"/>
+          <path d="M4 6H6V8H4V6Z" fill="#444444"/>
+          <path d="M10 2H12V4H10V2Z" fill="#444444"/>
+          <path d="M8 2H10V4H8V2Z" fill="#444444"/>
+          <path d="M16 6.2002H18V8.2002H16V6.2002Z" fill="#444444"/>
+          <path d="M14 4H16V6H14V4Z" fill="#444444"/>
+          <path d="M12 2H14V4H12V2Z" fill="#444444"/>
+          <path d="M16 8H18V10H16V8Z" fill="#444444"/>
+       </svg>
+
+      </div>
+
+      <div class="contlab" id="redo">
+        <span class="label">Redo</span>
+        <svg class="botbutton" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 14H12V16H14V14Z" fill="#444444"/>
+          <path d="M10 10H8V12H10V10Z" fill="#444444"/>
+          <path d="M16 12H14V14H16V12Z" fill="#444444"/>
+          <path d="M14 12H12V14H14V12Z" fill="#444444"/>
+          <path d="M12 12H10V14H12V12Z" fill="#444444"/>
+          <path d="M18 10H16V12H18V10Z" fill="#444444"/>
+          <path d="M14 10H12V12H14V10Z" fill="#444444"/>
+          <path d="M14 8H12V10H14V8Z" fill="#444444"/>
+          <path d="M12 4H10V6H12V4Z" fill="#444444"/>
+          <path d="M14 6H12V8H14V6Z" fill="#444444"/>
+          <path d="M8 2H6V4H8V2Z" fill="#444444"/>
+          <path d="M10 2H8V4H10V2Z" fill="#444444"/>
+          <path d="M2 6H0V8.2002H2V6Z" fill="#444444"/>
+          <path d="M4 4H2V6H4V4Z" fill="#444444"/>
+          <path d="M6 2H4V4H6V2Z" fill="#444444"/>
+          <path d="M2 8H0V10H2V8Z" fill="#444444"/>
+         </svg>
+      </div>
+
+    </div>
+
+        <div class="groupbot" id="gBs">
+           <div class="contlab" id="zoomin">
+            <span class="label"> <span class="labeltext">Zoom In</span> </span>
+
+              <svg class="botbutton" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M8 4H10V6H8V4Z" fill="#444444"/>
+               <path d="M8 2H10V4H8V2Z" fill="#444444"/>
+               <path d="M8 6H10V8H8V6Z" fill="#444444"/>
+               <path d="M8 8H10V10H8V8Z" fill="#444444"/>
+               <path d="M8 10H10V12H8V10Z" fill="#444444"/>
+               <path d="M8 12H10V14H8V12Z" fill="#444444"/>
+               <path d="M8 14H10V16H8V14Z" fill="#444444"/>
+               <path d="M10 8H12V10H10V8Z" fill="#444444"/>
+               <path d="M12 8H14V10H12V8Z" fill="#444444"/>
+               <path d="M14 8H16V10H14V8Z" fill="#444444"/>
+               <path d="M6 8H8V10H6V8Z" fill="#444444"/>
+               <path d="M4 8H6V10H4V8Z" fill="#444444"/>
+               <path d="M2 8H4V10H2V8Z" fill="#444444"/>
+            </svg>
+
+           </div>
+
+           <div class="contlab" id="zoomout">
+             <span class="label">Zoom Out</span>
+             <svg class="botbutton" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 8H10V10H8V8Z" fill="#444444"/><path d="M10 8H12V10H10V8Z" fill="#444444"/><path d="M12 8H14V10H12V8Z" fill="#444444"/><path d="M14 8H16V10H14V8Z" fill="#444444"/><path d="M6 8H8V10H6V8Z" fill="#444444"/><path d="M4 8H6V10H4V8Z" fill="#444444"/><path d="M2 8H4V10H2V8Z" fill="#444444"/>
+            </svg>
+           </div>
+        </div>
+
+        <div  class="groupbot"  >
+          <div class="contlab" id="fitScreen">
+            <span class="label">Fit Screen</span>
+             <svg class="botbutton" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 16L2 14H4V16H2Z" fill="#444444"/>
+               <path d="M2 14V12H4V14H2Z" fill="#444444"/>
+               <path d="M4 16V14H6V16H4Z" fill="#444444"/>
+               <path d="M4 14V12H6V14H4Z" fill="#444444"/>
+               <path d="M6 16V14H8V16H6Z" fill="#444444"/>
+               <path d="M2 12V10H4V12H2Z" fill="#444444"/>
+               <path d="M6 12V10H8V12H6Z" fill="#444444"/>
+               <path d="M8 10V8H10V10H8Z" fill="#444444"/>
+               <path d="M10 8V6H12V8H10Z" fill="#444444"/>
+               <path d="M12 6V4H14V6H12Z" fill="#444444"/>
+               <path d="M14 4V2L16 2V4H14Z" fill="#444444"/>
+               <path d="M14 6V4H16V6H14Z" fill="#444444"/>
+               <path d="M12 4V2H14V4H12Z" fill="#444444"/>
+               <path d="M14 8V6H16V8H14Z" fill="#444444"/>
+               <path d="M10 4V2H12V4H10Z" fill="#444444"/>
+             </svg>
+          </div>
+
+           <div class="contlab" id="setFullscreen">
+             <span class="label">Fullscreen</span>
+             <svg class="botbutton" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 8V6H16V8H14Z" fill="#444444"/><path d="M2 8L2 6H4V8H2Z" fill="#444444"/><path d="M10 2H12V4H10V2Z" fill="#444444"/>
+              <path d="M10 14H12V16H10V14Z" fill="#444444"/><path d="M14 6V4H16V6H14Z" fill="#444444"/><path d="M2 6V4H4V6H2Z" fill="#444444"/>
+              <path d="M12 2H14V4H12V2Z" fill="#444444"/><path d="M12 14H14V16H12V14Z" fill="#444444"/><path d="M14 4V2L16 2V4H14Z" fill="#444444"/>
+              <path d="M2 4V2L4 2V4H2Z" fill="#444444"/><path d="M14 14H16V16H14V14Z" fill="#444444"/><path d="M14 12H16V14H14V12Z" fill="#444444"/><path d="M6 14H8V16H6V14Z" fill="#444444"/><path d="M4 14H6V16H4V14Z" fill="#444444"/><path d="M14 12V10H16V12H14Z" fill="#444444"/><path d="M2 12L2 10H4V12H2Z" fill="#444444"/><path d="M6 2H8V4H6V2Z" fill="#444444"/><path d="M2 14H4V16H2V14Z" fill="#444444"/><path d="M2 14V12H4V14H2Z" fill="#444444"/><path d="M4 2L6 2V4H4V2Z" fill="#444444"/>
+            </svg>
+
+           </div>
+
+
+         </div>
+
+
+
+
+
+</div>
+  <div style="display:none">
+    <img id="ImgLoads">
+    <video  id="VideoLoads" muted="muted" controls loop>
+    </video>
+    <video  id="WebcamLoads" muted="muted" controls>
+    </video>
+  </div>
+
+
+<canvas id="videoCanvas"  style="display:none; object-fit: fill;"></canvas>
+
+
+<script>
+  document.title = "Digitiles";
+</script>

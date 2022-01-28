@@ -1,0 +1,153 @@
+.loading{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-color: var(--bg-color);
+  z-index:30;
+}
+.loadingTitle{
+  position:fixed;
+  margin:auto;
+  width:100%;
+  height:80%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loadingTitle SVG{
+  width:400px;
+  height:auto;
+}
+
+
+
+
+.progressLoading{
+  background-color: white;
+  position:fixed;
+  top:4rem;
+  width:250px;
+  height:3rem;
+  left: 50%;
+  padding:0.5rem;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index:20;
+}
+.labelLoading{
+  text-align: center;
+}
+/*------------------------------------------------ -*/
+.loader {
+  width:300px;
+  margin:0 auto;
+  margin-top:4rem;
+  border-radius:0px;
+  border:4px solid transparent;
+  position:relative;
+
+}
+.loader:before {
+  content:'';
+  border:2px solid black;
+  border-radius:0px;
+  position:absolute;
+  top:-4px;
+  right:-4px;
+  bottom:-4px;
+  left:-4px;
+  height:6px;
+}
+.loader .loaderBar {
+  position:absolute;
+  border-radius:0px;
+  height:6px;
+  top:-2px;
+  right:100%;
+  bottom:0;
+  left:0;
+  background:black;
+  width:0;
+  animation:borealisBar 2s linear infinite;
+}
+
+@keyframes borealisBar {
+  0% {
+    left:0%;
+    right:100%;
+    width:0%;
+  }
+  10% {
+    left:0%;
+    right:75%;
+    width:25%;
+  }
+  90% {
+    right:0%;
+    left:75%;
+    width:25%;
+  }
+  100% {
+    left:100%;
+    right:0%;
+    width:0%;
+  }
+}
+
+
+.loaderSmall {
+  width:200px;
+  margin:0 auto;
+  margin-top:1rem;
+  border-radius:0px;
+  border:4px solid transparent;
+  position:relative;
+  box-shadow: 0px 2px 8px var(--text-color-faded2);
+}
+.loaderSmall:before {
+  content:'';
+  border:2px solid black;
+  border-radius:0px;
+  position:absolute;
+  top:-4px;
+  right:-4px;
+  bottom:-4px;
+  left:-4px;
+  height:6px;
+}
+.loaderSmall .loaderBarSmall {
+  position:absolute;
+  border-radius:0px;
+  height:6px;
+  top:-2px;
+  right:100%;
+  bottom:0;
+  left:0;
+  background:black;
+  width:0;
+  animation:borealisBar 2s linear infinite;
+}
+
+
+.naB{
+  position:fixed;
+  z-index:20;
+  background-color: white;
+  text-align: center;
+  width:100%;
+  height:100%;
+  padding-top:30vh;
+}
+.naBtext{
+  font-family: "Raleway";
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+.naBtextBig{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
