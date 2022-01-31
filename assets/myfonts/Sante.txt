@@ -1,4 +1,4 @@
-Nam: Santé Serif;
+Nam: Sante Serif;
 Wid: 9;
 Hei: 9;
 
