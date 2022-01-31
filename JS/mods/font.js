@@ -6,22 +6,22 @@ class FontReader{
   constructor(){
     this.fontList ={};
     var fontValues= [
-      "Santé",
+      "Sante",
       //"DC",
       "Truchet-SansSerif",
       "Truchet-Serif",
       "Truchet-Mono",
       "EightBit",
-      "Emojis"
+     
     ];
     this.n=[
-      "Santé Serif",
+      "Sante Serif",
       //"Design Comp Small",
       "Truchet Sans Serif",
       "Truchet Serif",
       "Truchet Mono",
       "Eight Bit",
-    "Emojis"];
+    ];
 
 
     this.fontValues= fontValues;
