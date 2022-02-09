@@ -237,7 +237,7 @@ div{
 }
 #topbarHome{
   position:fixed;
-  width:calc(100% );
+  width:calc(100vw );
   height: var(--top-height);
   display:flex;
   flex-direction: row;

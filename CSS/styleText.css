@@ -253,12 +253,20 @@
 .col6{
   flex: 6;
 }
+
+
 .flex-grid {
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: transparent;
+  width:100%;
 }
 .col {
   flex: 1;
+  min-width:30px;
 }
+
 .col2 {
   flex: 2;
 }
