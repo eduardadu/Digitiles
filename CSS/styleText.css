@@ -2,6 +2,7 @@
   overflow-y: auto;
   width:100%;
   height:100%;
+  position:relative;
 }
 
 /*---------------------------------------------------------------------- ABOUT PAGE  */
@@ -38,6 +39,7 @@
     min-height:calc(100% - 6rem);
     padding-top: 6rem;
     margin-bottom:0px;
+    overflow-x: hidden;
 }
 
 .textContainer{
@@ -90,6 +92,9 @@
   align-items: center;
   margin-top:3rem;
   z-index:5;
+  position:relative;
+  height:100%;
+  width:100%;
 }
 
 .imgAbout{
