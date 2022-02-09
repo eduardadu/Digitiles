@@ -142,6 +142,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+      flex-wrap: wrap;
 }
 #goTry{
   max-width: 20rem;
@@ -159,7 +160,7 @@
   height:1.6rem;
 }
 #knowMore{
-  margin-left:0.4rem;
+
   display: inline-block;
   position:relative;
   margin-top:0.8rem;
