@@ -315,7 +315,9 @@
   #imgAbout {
     position: absolute; top:5%; height:90%;
     opacity:0.1;
-    right: -60vw;
+    max-width:100vw;
+    overflow-x:hidden;
+    right:0px;
   }
 }
 
