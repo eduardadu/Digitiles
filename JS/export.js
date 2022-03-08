@@ -19,6 +19,7 @@ class Export{
             e.noStroke();
             let shadeMod = g.modsDyn[w][h]; //***
               shade= Math.max(shade , shadeMod);
+              shade= Math.min(shade , e.maxValue);
 
               g.cellList[w + (h*(g.grid.columns))].setValue(shade);
 
